@@ -4,11 +4,14 @@
 
 public class Myclass {
     public static void main(String[] args) {
-        int  val=-7;
-        if (val < 0)
-        System.out.println("Число отрицательное " + val);
-        else
-                    System.out.println("Число положительное " + val);
-
+       int val=getChislo(7);
+        System.out.println(val);
     }
+
+    private static int getChislo(int a) {
+        if (a < 0) System.out.println("Число отрицательное ");
+        if (a > 0) System.out.println("Число положительное ");
+        return a;
+    }
+
 }
