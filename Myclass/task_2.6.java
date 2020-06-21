@@ -5,7 +5,7 @@ checkBalance([10||10]) -> true, граница показана символом
 
 public class Myclass {
     public static void main(String[] args){
-        boolean nums = checkBalance(new int[]{1,1,1});
+        boolean nums = checkBalance(new int[]{1,1,1}, new int[]{2,1});
         System.out.println(nums);
     }
 
