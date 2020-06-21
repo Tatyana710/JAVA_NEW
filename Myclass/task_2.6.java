@@ -5,11 +5,11 @@ checkBalance([10||10]) -> true, граница показана символом
 
 public class Myclass {
     public static void main(String[] args){
-        boolean nums = checkBalance(new int[]{1,1,1});//не пойму как здесь поставить символ || чтобы сравнить левый и правый массив
+        boolean nums = checkBalance(new int[]{1,1,1});
         System.out.println(nums);
     }
 
-    private static boolean checkBalance(int[] array) {
+    private static boolean checkBalance(int[] array, int[] array1) {
         int leftSum = 0;
         for (int i = 0; i < array.length; i++) {
             leftSum += array[i];
